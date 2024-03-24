@@ -1,0 +1,13 @@
+import account from './account.svg'
+import appointment from './appointment.svg'
+import cart from './cart.svg'
+import FAQ from './FAQ.svg'
+import location from './location.svg'
+import search from './search.svg'
+import wishlist from './wishlist.svg'
+import logo from './logo.svg'
+import slider1 from './slider1.png'
+import slider2 from './slider2.png'
+import slider3 from './slider3.png'
+import slider4 from './slider4.png'
+export {account ,appointment,cart,FAQ,location,search,wishlist,logo,slider1,slider2,slider3,slider4}
