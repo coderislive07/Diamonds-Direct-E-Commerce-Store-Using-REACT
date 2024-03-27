@@ -4,7 +4,6 @@ import 'react-slideshow-image/dist/styles.css';
 import { slider1, slider2, slider3, slider4 } from '../assets/index';
 
 const data = [slider1, slider2, slider3, slider4];
-
 const Banners = () => {
   const fadeImages = [slider1, slider2, slider3, slider4];
   const slideTexts = [
@@ -21,7 +20,7 @@ const Banners = () => {
   ]
 
   return (
-    <div className="w-full h-auto my-14" style={{ position: 'relative' }}>
+    <div className="w-full h-auto my-40" style={{ position: 'relative' }}>
       <Fade>
         {fadeImages.map((image, index) => (
           <div key={index} className="slide-container" style={{ position: 'relative' }}>
