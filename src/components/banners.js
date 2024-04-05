@@ -20,7 +20,7 @@ const Banners = () => {
   ]
 
   return (
-    <div className="w-full h-auto my-40" style={{ position: 'relative' }}>
+    <div className="w-full h-auto my-36" style={{ position: 'relative' }}>
       <Fade>
         {fadeImages.map((image, index) => (
           <div key={index} className="slide-container" style={{ position: 'relative' }}>

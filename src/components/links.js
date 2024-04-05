@@ -10,9 +10,9 @@ export const data = [
         label: "CREATE YOUR ENGAGEMENT RING",
         key: "CREATE YOUR ENGAGEMENT RING",
         links: [
-          { label: "Start with a Natural Diamond", url: "#" },
-          { label: "Start with a Lab Grown Diamond", url: "#" },
-          { label: "Start with a Setting", url: "#" }
+          { label: "Start with a Natural Diamond", to: "/naturaldiamond" },
+          { label: "Start with a Lab Grown Diamond", to: "#" },
+          { label: "Start with a Setting", to: "#" }
         ]
       },
       {
@@ -20,15 +20,15 @@ export const data = [
         key: "CUSTOMIZE YOUR ENGAGEMENT RING",
         margins:'-200px',
         links: [
-          { label: "Diamonds Direct 3D Ring Studio", url: "#" }
+          { label: "Diamonds Direct 3D Ring Studio", to: "#" }
         ]
       },
       {
         label: "PRESET ENGAGEMENT RINGS",
         key: "PRESET ENGAGEMENT RINGS",
         links: [
-          { label: "One of a Kind Engagement Rings", url: "#" },
-          { label: "Ready to Wear Engagement Rings", url: "#" }
+          { label: "One of a Kind Engagement Rings", to: "#" },
+          { label: "Ready to Wear Engagement Rings", to: "#" }
         ]
       },
      
@@ -38,17 +38,17 @@ export const data = [
         label: "Natural Diamonds",
         key: "Natural Diamonds",
         links: [
-          { label: "Round", url: "#" },
-          { label: "Pear", url: "#" },
-          { label: "Cushion", url: "#" },
-          { label: "Emerald", url: "#" },
-          { label: "Oval", url: "#" },
-          { label: "Marquise", url: "#" },
-          { label: "Princess", url: "#" },
-          { label: "Heart", url: "#" },
-          { label: "Asscher", url: "#" },
-          { label: "Radiant", url: "#" },
-          { label: "Shop all", url: "#" }
+          { label: "Round", to: "#" },
+          { label: "Pear", to: "#" },
+          { label: "Cushion", to: "#" },
+          { label: "Emerald", to: "#" },
+          { label: "Oval", to: "#" },
+          { label: "Marquise", to: "#" },
+          { label: "Princess", to: "#" },
+          { label: "Heart", to: "#" },
+          { label: "Asscher", to: "#" },
+          { label: "Radiant", to: "#" },
+          { label: "Shop all", to: "#" }
         ]
       }
     ],
@@ -57,17 +57,17 @@ export const data = [
       label: "Lab Grown Diamonds",
       key: "Lab Grown Diamonds",
       links: [
-        { label: "Round", url: "#" },
-        { label: "Pear", url: "#" },
-        { label: "Cushion", url: "#" },
-        { label: "Emerald", url: "#" },
-        { label: "Oval", url: "#" },
-        { label: "Marquise", url: "#" },
-        { label: "Princess", url: "#" },
-        { label: "Heart", url: "#" },
-        { label: "Asscher", url: "#" },
-        { label: "Radiant", url: "#" },
-        { label: "Shop all", url: "#" }
+        { label: "Round", to: "#" },
+        { label: "Pear", to: "#" },
+        { label: "Cushion", to: "#" },
+        { label: "Emerald", to: "#" },
+        { label: "Oval", to: "#" },
+        { label: "Marquise", to: "#" },
+        { label: "Princess", to: "#" },
+        { label: "Heart", to: "#" },
+        { label: "Asscher", to: "#" },
+        { label: "Radiant", to: "#" },
+        { label: "Shop all", to: "#" }
       ]
     }
   ],
@@ -76,9 +76,9 @@ export const data = [
         label: "EDUCATION",
         key: "EDUCATION",
         links: [
-          { label: "Diamond Education", url: "#" },
-          { label: "Lab Grown Diamond Education", url: "#" },
-          { label: "Start with a Setting", url: "#" }
+          { label: "Diamond Education", to: "#" },
+          { label: "Lab Grown Diamond Education", to: "#" },
+          { label: "Start with a Setting", to: "#" }
         ]
       }
   ],
@@ -98,24 +98,24 @@ export const data = [
         label: "CREATE YOUR ENGAGEMENT RING",
         key: "CREATE YOUR ENGAGEMENT RING",
         links: [
-          { label: "Start with a Natural Diamond", url: "#" },
-          { label: "Start with a Lab Grown Diamond", url: "#" },
-          { label: "Start with a Setting", url: "#" }
+          { label: "Start with a Natural Diamond", to: "#" },
+          { label: "Start with a Lab Grown Diamond", to: "#" },
+          { label: "Start with a Setting", to: "#" }
         ]
       },
       {
         label: "CUSTOMIZE YOUR ENGAGEMENT RING",
         key: "CUSTOMIZE YOUR ENGAGEMENT RING",
         links: [
-          { label: "Diamonds Direct 3D Ring Studio", url: "#" }
+          { label: "Diamonds Direct 3D Ring Studio", to: "#" }
         ]
       },
       {
         label: "PRESET ENGAGEMENT RINGS",
         key: "PRESET ENGAGEMENT RINGS",
         links: [
-          { label: "One of a Kind Engagement Rings", url: "#" },
-          { label: "Ready to Wear Engagement Rings", url: "#" }
+          { label: "One of a Kind Engagement Rings", to: "#" },
+          { label: "Ready to Wear Engagement Rings", to: "#" }
         ]
       },
      
@@ -125,13 +125,13 @@ export const data = [
         label: "SETTINGS BY STYLE",
         key: "SETTINGS BY STYLE",
         links: [
-          { label: "Solitaire", url: "#" },
-          { label: "Halo", url: "#" },
-          { label: "Diamond Accented", url: "#" },
-          { label: "Three Stone", url: "#" },
-          { label: "Twist", url: "#" },
-          { label: "Hidden Accents", url: "#" },
-          { label: "Shop All Settings", url: "#" },
+          { label: "Solitaire", to: "#" },
+          { label: "Halo", to: "#" },
+          { label: "Diamond Accented", to: "#" },
+          { label: "Three Stone", to: "#" },
+          { label: "Twist", to: "#" },
+          { label: "Hidden Accents", to: "#" },
+          { label: "Shop All Settings", to: "#" },
           
         ]
       }
@@ -141,12 +141,12 @@ export const data = [
         label: "SETTINGS BY FEATURED DESIGNERS",
         key: "SETTINGS BY FEATURED DESIGNERS",
         links: [
-          { label: "Shop Diamonds Direct Designs", url: "#" },
-          { label: "Shop Michael M", url: "#" },
-          { label: "Shop Simon G.", url: "#" },
-          { label: "Shop Tacori", url: "#" },
-          { label: "Shop Veraggio", url: "#" },
-          { label: "View All Designers", url: "#" },
+          { label: "Shop Diamonds Direct Designs", to: "#" },
+          { label: "Shop Michael M", to: "#" },
+          { label: "Shop Simon G.", to: "#" },
+          { label: "Shop Tacori", to: "#" },
+          { label: "Shop Veraggio", to: "#" },
+          { label: "View All Designers", to: "#" },
         ]
       }
     ],
@@ -155,9 +155,9 @@ export const data = [
         label: "EDUCATION",
         key: "EDUCATION2",
         links: [
-          { label: "Diamond Education", url: "#" },
-          { label: "Lab Grown Diamond Education", url: "#" },
-          { label: "Start with a Setting", url: "#" }
+          { label: "Diamond Education", to: "#" },
+          { label: "Lab Grown Diamond Education", to: "#" },
+          { label: "Start with a Setting", to: "#" }
         ]
       }
   ],
@@ -171,13 +171,13 @@ export const data = [
         label: "WOMEN'S BANDS",
         key: "WOMEN'S BANDS",
         links: [
-          { label: "Essential", url: "#" },
-          { label: "Diamond", url: "#" },
-          { label: "Stackable", url: "#" },
-          { label: "Eternity", url: "#" },
-          { label: "Gemstone", url: "#" },
-          { label: "Plain", url: "#" },
-          { label: "Shop All", url: "#" },
+          { label: "Essential", to: "#" },
+          { label: "Diamond", to: "#" },
+          { label: "Stackable", to: "#" },
+          { label: "Eternity", to: "#" },
+          { label: "Gemstone", to: "#" },
+          { label: "Plain", to: "#" },
+          { label: "Shop All", to: "#" },
         ]
       },
     ],
@@ -186,13 +186,13 @@ export const data = [
         label: "MEN'S BANDS",
         key: "MEN'S BANDS",
         links: [
-          { label: "Diamond", url: "#" },
-          { label: "Textured", url: "#" },
-          { label: "Carved", url: "#" },
-          { label: "Milgrain", url: "#" },
-          { label: "Matte", url: "#" },
-          { label: "Plain", url: "#" },
-          { label: "Shop All", url: "#" },
+          { label: "Diamond", to: "#" },
+          { label: "Textured", to: "#" },
+          { label: "Carved", to: "#" },
+          { label: "Milgrain", to: "#" },
+          { label: "Matte", to: "#" },
+          { label: "Plain", to: "#" },
+          { label: "Shop All", to: "#" },
         ]
       },
     ],
@@ -201,12 +201,12 @@ export const data = [
       label: "WEDDING BANDS BY FEATURED DESIGNERS",
         key: "WEDDING BANDS BY FEATURED DESIGNERS",
         links: [
-          { label: "Shop Diamonds Direct Designs", url: "#" },
-          { label: "Shop Michael M", url: "#" },
-          { label: "Shop Simon G.", url: "#" },
-          { label: "Shop Tacori", url: "#" },
-          { label: "Shop Verragio", url: "#" },
-          { label: "View All Designers", url: "#" },
+          { label: "Shop Diamonds Direct Designs", to: "#" },
+          { label: "Shop Michael M", to: "#" },
+          { label: "Shop Simon G.", to: "#" },
+          { label: "Shop Tacori", to: "#" },
+          { label: "Shop Verragio", to: "#" },
+          { label: "View All Designers", to: "#" },
         ]
       },
     ],
@@ -220,24 +220,24 @@ export const data = [
         label: "CREATE YOUR ENGAGEMENT RING",
         key: "CREATE YOUR ENGAGEMENT RING",
         links: [
-          { label: "Start with a Natural Diamond", url: "#" },
-          { label: "Start with a Lab Grown Diamond", url: "#" },
-          { label: "Start with a Setting", url: "#" }
+          { label: "Start with a Natural Diamond", to: "#" },
+          { label: "Start with a Lab Grown Diamond", to: "#" },
+          { label: "Start with a Setting", to: "#" }
         ]
       },
       {
         label: "CUSTOMIZE YOUR ENGAGEMENT RING",
         key: "CUSTOMIZE YOUR ENGAGEMENT RING",
         links: [
-          { label: "Diamonds Direct 3D Ring Studio", url: "#" }
+          { label: "Diamonds Direct 3D Ring Studio", to: "#" }
         ]
       },
       {
         label: "PRESET ENGAGEMENT RINGS",
         key: "PRESET ENGAGEMENT RINGS",
         links: [
-          { label: "One of a Kind Engagement Rings", url: "#" },
-          { label: "Ready to Wear Engagement Rings", url: "#" }
+          { label: "One of a Kind Engagement Rings", to: "#" },
+          { label: "Ready to Wear Engagement Rings", to: "#" }
         ]
       },
      
@@ -247,17 +247,17 @@ export const data = [
         label: "Natural Diamonds",
         key: "Natural Diamonds",
         links: [
-          { label: "Round", url: "#" },
-          { label: "Pear", url: "#" },
-          { label: "Cushion", url: "#" },
-          { label: "Emerald", url: "#" },
-          { label: "Oval", url: "#" },
-          { label: "Marquise", url: "#" },
-          { label: "Princess", url: "#" },
-          { label: "Heart", url: "#" },
-          { label: "Asscher", url: "#" },
-          { label: "Radiant", url: "#" },
-          { label: "Shop all", url: "#" }
+          { label: "Round", to: "#" },
+          { label: "Pear", to: "#" },
+          { label: "Cushion", to: "#" },
+          { label: "Emerald", to: "#" },
+          { label: "Oval", to: "#" },
+          { label: "Marquise", to: "#" },
+          { label: "Princess", to: "#" },
+          { label: "Heart", to: "#" },
+          { label: "Asscher", to: "#" },
+          { label: "Radiant", to: "#" },
+          { label: "Shop all", to: "#" }
         ]
       }
     ],
@@ -266,17 +266,17 @@ export const data = [
       label: "Lab Grown Diamonds",
       key: "Lab Grown Diamonds",
       links: [
-        { label: "Round", url: "#" },
-        { label: "Pear", url: "#" },
-        { label: "Cushion", url: "#" },
-        { label: "Emerald", url: "#" },
-        { label: "Oval", url: "#" },
-        { label: "Marquise", url: "#" },
-        { label: "Princess", url: "#" },
-        { label: "Heart", url: "#" },
-        { label: "Asscher", url: "#" },
-        { label: "Radiant", url: "#" },
-        { label: "Shop all", url: "#" }
+        { label: "Round", to: "#" },
+        { label: "Pear", to: "#" },
+        { label: "Cushion", to: "#" },
+        { label: "Emerald", to: "#" },
+        { label: "Oval", to: "#" },
+        { label: "Marquise", to: "#" },
+        { label: "Princess", to: "#" },
+        { label: "Heart", to: "#" },
+        { label: "Asscher", to: "#" },
+        { label: "Radiant", to: "#" },
+        { label: "Shop all", to: "#" }
       ]
     }
   ],
@@ -285,9 +285,9 @@ export const data = [
         label: "EDUCATION",
         key: "EDUCATION",
         links: [
-          { label: "Diamond Education", url: "#" },
-          { label: "Lab Grown Diamond Education", url: "#" },
-          { label: "Start with a Setting", url: "#" }
+          { label: "Diamond Education", to: "#" },
+          { label: "Lab Grown Diamond Education", to: "#" },
+          { label: "Start with a Setting", to: "#" }
         ]
       }
   ],
@@ -307,9 +307,9 @@ export const data = [
         label:"WATCHES",
         key: "WATCHES",
         links: [
-          { label: "Men's Watches", url: "#" },
-          { label: "Women's watches", url: "#" },
-          { label: "Shop All", url: "#" }
+          { label: "Men's Watches", to: "#" },
+          { label: "Women's watches", to: "#" },
+          { label: "Shop All", to: "#" }
         ]
       },
       
@@ -325,12 +325,12 @@ export const data = [
         label: "ABOUT US",
         key: "ABOUT US",
         links: [
-          { label: "Our Story", url: "#" },
-          { label: "Warranties & Guarantees", url: "#" },
-          { label: "FAQ", url: "#" },
-          { label: "Diamonds Direct Foundation", url: "#" },
-          { label: "Blog", url: "#" },
-          { label: "Careers", url: "#" },
+          { label: "Our Story", to: "#" },
+          { label: "Warranties & Guarantees", to: "#" },
+          { label: "FAQ", to: "#" },
+          { label: "Diamonds Direct Foundation", to: "#" },
+          { label: "Blog", to: "#" },
+          { label: "Careers", to: "#" },
         ]
       },
      
@@ -340,14 +340,14 @@ export const data = [
         label: "EDUCATION",
         key: "EDUCATION",
         links: [
-          { label: "Diamond Education", url: "#" },
-          { label: "Lab Grown Diamond Education", url: "#" },
-          { label: "Gemstone Education", url: "#" },
-          { label: "Pearl Education", url: "#" },
-          { label: "Metal Education", url: "#" },
-          { label: "Our Designers", url: "#" },
-          { label: "Diamonds Direct Custom Designs", url: "#" },
-          { label: "The Diamonds Direct Promise", url: "#" },
+          { label: "Diamond Education", to: "#" },
+          { label: "Lab Grown Diamond Education", to: "#" },
+          { label: "Gemstone Education", to: "#" },
+          { label: "Pearl Education", to: "#" },
+          { label: "Metal Education", to: "#" },
+          { label: "Our Designers", to: "#" },
+          { label: "Diamonds Direct Custom Designs", to: "#" },
+          { label: "The Diamonds Direct Promise", to: "#" },
           
         ]
       }
@@ -357,8 +357,8 @@ export const data = [
         label: "FINANCING",
         key: "FINANCING",
         links: [
-          { label: "Diamonds Direct Special Financing", url: "#" },
-          { label: "Affirm", url: "#" },
+          { label: "Diamonds Direct Special Financing", to: "#" },
+          { label: "Affirm", to: "#" },
         ]
       }
     ],
@@ -367,9 +367,9 @@ export const data = [
         label: "CONTACT US",
         key: "CONTACT US",
         links: [
-          { label: "Our Showrooms", url: "#" },
-          { label: "Request An Appointment", url: "#" },
-          { label: "Chat with an Expert", url: "#" }
+          { label: "Our Showrooms", to: "#" },
+          { label: "Request An Appointment", to: "#" },
+          { label: "Chat with an Expert", to: "#" }
         ]
       }
   ],
@@ -383,8 +383,8 @@ export const data = [
         label:'FINANCING',
         key: "FINANCING",
         links: [
-          { label: "Diamonds Direct Special Financing", url: "#" },
-          { label: "Affirm", url: "#" },
+          { label: "Diamonds Direct Special Financing", to: "#" },
+          { label: "Affirm", to: "#" },
         ]
       },
       

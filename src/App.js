@@ -1,12 +1,24 @@
 import React from 'react';
-import Home from '../src/pages/Home'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from '../src/pages/Home';
+import Header from '../src/components/Header';
+import Cart from '../src/components/cart';
+import Footer from '../src/components/footer';
+import Naturaldiamond from '../src/pages/Diamonds/Naturaldiamond';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <>
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/cart" element={<Cart/>} />
+          <Route path="/naturaldiamond"element={<Naturaldiamond/>} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
