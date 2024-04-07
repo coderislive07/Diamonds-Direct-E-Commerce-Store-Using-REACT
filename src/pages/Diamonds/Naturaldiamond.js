@@ -7,9 +7,9 @@ import Tippy from '@tippyjs/react';
 import Footer from '../../components/footer'
 
 export default function Naturaldiamond() {
-  const [sortOrder, setSortOrder] = useState('ascending'); // State to manage sorting order
+  const [sortOrder, setSortOrder] = useState('ascending'); 
 
-  // Function to toggle sorting order
+ 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === 'ascending' ? 'descending' : 'ascending');
   };
