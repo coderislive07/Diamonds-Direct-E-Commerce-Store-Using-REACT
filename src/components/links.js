@@ -11,7 +11,7 @@ export const data = [
         key: "CREATE YOUR ENGAGEMENT RING",
         links: [
           { label: "Start with a Natural Diamond", to: "/naturaldiamond" },
-          { label: "Start with a Lab Grown Diamond", to: "#" },
+          { label: "Start with a Lab Grown Diamond", to: "/labgrowndiamond" },
           { label: "Start with a Setting", to: "#" }
         ]
       },

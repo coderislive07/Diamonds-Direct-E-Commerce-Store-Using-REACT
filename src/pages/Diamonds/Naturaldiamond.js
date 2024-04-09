@@ -27,8 +27,6 @@ export default function Naturaldiamond() {
 
   const sortedData = [...data].sort(sortByPrice);
 
-  console.log('Sort Order:', sortOrder);
-  console.log('Sorted Data:', sortedData);
 
   return (
     <div className='w-full h-auto'>

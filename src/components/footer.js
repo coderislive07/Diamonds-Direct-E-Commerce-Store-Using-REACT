@@ -59,7 +59,7 @@ export default function Footer() {
         <div className='Newsletter'>
           <h1 className='text-xl font-semibold'>Subscribe To Our Newsletter</h1>
           <div>
-            <input type='text' placeholder='Enter Email' className='my-3 w-72 h-10 bg-[#f4f4f5] p-3 border '/>
+            <input type='text' name='email' placeholder='Enter Email' className='my-3 w-72 h-10 bg-[#f4f4f5] p-3 border '/>
             <button className='bg-[#f4f4f5] h-10 w-32 my-3 px-4 border border-black  hover:bg-purple-700' type='submit'>SUBMIT</button>
            <div className='icons flex'>
             <svg className='my-3 mx-0 cursor-pointer hover:fill-purple-900 'version="1.1" xmlns="http://www.w3.org/2000/svg" width="66" height="24" viewBox="0 0 666 1024"><title></title><g id="icomoon-ignore"></g><path d="M558.3 576l28.442-185.32h-177.822v-120.26c0-50.7 24.84-100.12 104.478-100.12h80.84v-157.78c0 0-73.359-12.52-143.497-12.52-146.44 0-242.16 88.76-242.16 249.44v141.24h-162.78v185.32h162.78v448h200.34v-448h149.38z"></path></svg>
