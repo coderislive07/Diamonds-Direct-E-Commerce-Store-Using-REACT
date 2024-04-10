@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <div className='w-full bg-white sticky top-0 z-50 border-b-2 border-gray-300'>
       <div className='max-w-screen-2xl my-5 mx-7 h-full flex items-center justify-start'>
-        <Tippy content="Location"><img className='w-8 mx-4 cursor-pointer icon-container' src={location} alt="Location" /></Tippy>
+        <Link to='/location'><Tippy content="Location"><img className='w-8 mx-4 cursor-pointer icon-container' src={location} alt="Location" /></Tippy></Link>
         <Tippy content="Request An Appointment"><img className='w-8 mx-4 cursor-pointer icon-container ' src={appointment} alt="Appointment" /></Tippy>
         <Tippy content="FAQ"><img className='w-8 mx-4 cursor-pointer icon-container ' src={FAQ} alt="FAQ" /></Tippy>
         <Link to='/'><img className='w-1/4 mx-96 cursor-pointer' src={logo} alt="Logo" /></Link> 
@@ -34,11 +34,12 @@ export default function Header() {
             key={item.key}
             index={item.index}
             margins={item.margins}
+            to={item.to}
             className='mx-7 nav relative'
             onMouseEnter={() => handleMouseEnter(item.key)}
             onMouseLeave={handleMouseLeave}
           >
-            {item.label}
+            <Link to ={item.to}>{item.label}</Link>
             {hoveredItem === item.key && item.children && (
               <div className="absolute top-full border border-x-gray-400 bg-white px-2 font-light text-black shadow-md" style={{ marginLeft: item.margins, marginTop: '6px', width: '1420px', paddingBottom: '30px', paddingTop: '0px' }}>
                 <div className='flex'>
@@ -49,7 +50,7 @@ export default function Header() {
                         <ul className='text-black px-8'>
                           {childItem.links.map((link) => (
                             <li key={link.label} className='py-1 hover:text-[#782374]'>
-                                  <Link to={link.to}>{link.label}</Link>
+                            <Link to={link.to}>{link.label}</Link>
                             </li>
                           ))}
                         </ul>

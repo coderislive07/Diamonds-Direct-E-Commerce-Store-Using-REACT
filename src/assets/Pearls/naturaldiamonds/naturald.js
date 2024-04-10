@@ -88,7 +88,7 @@ export const data=
 [
     {
         label:'Round 0.5 D s12',
-        key:'2',
+        key:'1',
         price :' 90,999',
         image:{image1}
     },
@@ -113,7 +113,6 @@ export const data=
     {
         label:'Emerald 0.5 D VS1 - #344085',
         key:'5',
-
         price :' 89,999',
         image:{image5}
     },

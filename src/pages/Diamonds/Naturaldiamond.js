@@ -1,15 +1,16 @@
+// Naturaldiamond.js
 import React, { useState } from 'react';
 import { data } from '../../assets/Pearls/naturaldiamonds/naturald';
 import './Naturaldiamond.css';
+import { Link } from 'react-router-dom';
 import { images } from '../../assets/Pearls/naturaldiamonds/naturald';
 import wishlist from '../../assets/wishlist.svg';
 import Tippy from '@tippyjs/react';
-import Footer from '../../components/footer'
+import Footer from '../../components/footer';
 
 export default function Naturaldiamond() {
-  const [sortOrder, setSortOrder] = useState('ascending'); 
+  const [sortOrder, setSortOrder] = useState('ascending');
 
- 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === 'ascending' ? 'descending' : 'ascending');
   };
@@ -26,7 +27,6 @@ export default function Naturaldiamond() {
   };
 
   const sortedData = [...data].sort(sortByPrice);
-
 
   return (
     <div className='w-full h-auto'>
@@ -46,7 +46,7 @@ export default function Naturaldiamond() {
           </select>
         </div>
         {sortedData.map((item, index) => (
-          <div key={index} className='w-1/4 mb-10 product-card cursor-pointer' style={{ width: '25%' }}>
+          <Link key={index} to={`/productpage/${item.key}`} className='w-1/4 mb-10 product-card cursor-pointer' style={{ width: '25%' }}>
             <div className='product-content' style={{ width: '100%', height: '300px', position: 'relative' }}>
               <img src={images[item.key]} alt='diamond' className='absolute inset-0 w-full h-full object-cover' />
               <Tippy content="Add To My Wishlist">
@@ -57,11 +57,10 @@ export default function Naturaldiamond() {
                 <h1 className='text-[#782374] product-price'>₹{item.price}</h1>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
-  
   );
 }

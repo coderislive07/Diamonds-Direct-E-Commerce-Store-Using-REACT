@@ -6,21 +6,16 @@ function Labgrowndiamond() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   const [sortOrder, setSortOrder] = useState('ascending');
-
-
   useEffect(() => {
     // Set the fetched items to the state
     setProducts(labgrowndata.Data.items);
   }, []);
-
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === 'ascending' ? 'descending' : 'ascending');
   };
-
   const sortByPrice = (a, b) => {
     const priceA = parseFloat(a.price_efi);
     const priceB = parseFloat(b.price_efi);
-
     if (sortOrder === 'ascending') {
       return priceA - priceB;
     } else {
@@ -47,7 +42,7 @@ function Labgrowndiamond() {
         </select>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid  md:grid-cols-4 gap-4">
         {error && <div>Error: {error.message}</div>}
         {sortedProducts.map(product => (
           <div key={product.sku_esi} className="p-4 rounded-lg cursor-pointer">

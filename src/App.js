@@ -6,6 +6,8 @@ import Cart from '../src/components/cart';
 import Footer from '../src/components/footer';
 import Naturaldiamond from '../src/pages/Diamonds/Naturaldiamond';
 import Labgrowndiamond from './pages/Diamonds/Labgrowndiamond';
+import Location from '../src/pages/Locations/location';
+import Productpage from '../src/pages/Diamonds/productpage';
 import './App.css';
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
           <Route path="/cart" element={<Cart/>} />
           <Route path="/naturaldiamond"element={<Naturaldiamond/>} />
           <Route path="/labgrowndiamond"element={<Labgrowndiamond/>} />
+          <Route path="/location"element={<Location/>} />
+          <Route path ="/productpage/:id"element={<Productpage/>} />
         </Routes>
       </Router>
     </>

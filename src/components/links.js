@@ -394,6 +394,7 @@ export const data = [
   {
     label: "LOCATIONS",
     key: "LOCATIONS",
+    to:"/location",
    
   }
 ];
