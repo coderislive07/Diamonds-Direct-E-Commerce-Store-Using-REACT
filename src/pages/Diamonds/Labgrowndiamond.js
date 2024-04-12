@@ -1,15 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import labgrowndata from './labgrowndata.json'; // Importing the JSON file
 import Footer from '../../components/footer'
+import { Link } from 'react-router-dom';
+import Preloader from '../../components/preloader/preloader';
 
 function Labgrowndiamond() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   const [sortOrder, setSortOrder] = useState('ascending');
   useEffect(() => {
-    // Set the fetched items to the state
-    setProducts(labgrowndata.Data.items);
+    setProducts(labgrowndata[0].Data.items);
   }, []);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+  if (isLoading) {
+    return <Preloader />;
+  }
+
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === 'ascending' ? 'descending' : 'ascending');
   };
@@ -41,15 +54,17 @@ function Labgrowndiamond() {
           <option value="descending">Price - High to Low</option>
         </select>
         </div>
-      </div>
+      </div>  
       <div className="grid  md:grid-cols-4 gap-4">
         {error && <div>Error: {error.message}</div>}
         {sortedProducts.map(product => (
+  
           <div key={product.sku_esi} className="p-4 rounded-lg cursor-pointer">
-            <img src={JSON.parse(product.images_ej)[0].url_thumbnail} alt={product.name_eti} className="w-full h-auto" />
+            <Link key={product.key} to={`/labgrowndiamond/${product.key}`}><img src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} className="w-full h-auto" /></Link>
             <div className="mt-4">
-              <h1 className='hover:text-[#782374] text-lg font-medium'>{product.name_eti}</h1>
-              <h1 className='text-[#782374] text-lg font-semibold'>₹{product.price_efi}</h1>
+              <h1 className='hover:text-[#782374] text-lg font-medium'>{product.label}</h1>
+              <h1 className='text-[#782374] text-lg font-semibold'>₹{product.price}</h1>
+              
             </div>
           </div>
         ))}
