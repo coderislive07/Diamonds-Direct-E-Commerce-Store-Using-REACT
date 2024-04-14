@@ -88,459 +88,534 @@ export const data=
 [
     {
         label:'Round 0.5 D s12',
-        key:'1',
+        key:'0',
         price :' 90,999',
-        image:{image1}
+        image:{image1},
+        shape:'round'
     },
     {
         label:'Oval 0.5 G VS1 - #344097',
-        key:'2',
+        key:'1',
         price :' 94,999',
-        image:{image2}
+        image:{image2},
+        shape:'oval'
     },
     {
         label:'Oval 0.5 D SI1 - #344089',
-        key:'3',
+        key:'2',
         price : ' 96,999',
-        image:{image3}
+        image:{image3},
+        shape:'oval'
     },
     {
         label:'Emerald 0.5 D VS2 - #344087',
-        key:'4',
+        key:'3',
         price : ' 97,999',
-        image:{image4}
-    },
+        image:{image4},
+        shape:'emerald'    },
     {
         label:'Emerald 0.5 D VS1 - #344085',
-        key:'5',
+        key:'4',
         price :' 89,999',
-        image:{image5}
+        shape:'emerald'
     },
     {
         label:'Oval 0.5 E VS1 - #344083',
-        key:'6',
+        key:'5',
         price :' 1,90,999',
-        image:{image6}
+        image:{image6},
+        shape:'oval'
     },
     {
         label:'Emerald 0.5 F VS2 - #344080',
-        key:'7',
+        key:'6',
         price :' 96,999',
-        image:{image7}
+        image:{image7},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VS1 - #344079',
-        key:'8',
+        key:'7',
         price :' 93,999',
-        image:{image8}
+        image:{image8},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VVS1 - #344077',
-        key:'9',
+        key:'8',
         price :' 91,999',
-        image:{image9}
+        image:{image9},
+        shape:'emerald'
     },
     {
         label:'Pear 0.5 E VS1 - #344000',
-        key:'10',
+        key:'9',
         price :' 94,999',
-        image:{image10}
+        image:{image10},
+        shape:'pear'
     },
     {
         label:'Emerald 0.5 F VS2 - #343993',
-        key:'7',
+        key:'10',
         price :' 1,96,999',
-        image:{image11}
+        image:{image11},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 F VS2 - #343925',
-        key: '45',
+        key: '11',
         price :' 1,93,999',
-        image:{image12}
+        image:{image12},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 I SI1 - #343908',
-        key:'13',
+        key:'12',
         price :' 2,96,999',
-        image:{image13}
+        image:{image13},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 H VS1 - #343905',
-        key:'14',
+        key:'13',
         price :' 1,96,999',
-        image:{image14}
+        image:{image14},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 H VS2 - #343903',
-        key:'15',
+        key:'14',
         price :' 90,999',
-        image:{image15}
+        image:{image15},
+        shape:'emerald'
     },
     {
         label:'Princess 0.5 G VS2 - #343892',
-        key:'16',
+        key:'15',
         price :' 99,999',
-        image:{image16}
+        image:{image16},
+        shape:'princess'
     },
     {
         label:'Princess 0.5 F VVS2 - #343890',
-        key:'17',
+        key:'16',
         price :' 93,999',
-        image:{image17}
+        image:{image17},
+        shape:'princess'
     },
     {
         label:'Marquise 0.5 F VS2 - #343875',
-        key:'18',
+        key:'17',
         price :' 96,999',
-        image:{image18}
+        image:{image18},
+        shape:'marquise'
     },
     {
         label:'Marquise 0.5 I SI1 - #343866',
-        key:'19',
+        key:'18',
         price :' 94,999',
-        image:{image19}
+        image:{image19},
+        shape:'marquise'
     },
     {
         label:'Oval 0.5 G VS2 - #343840',
-        key:'20',
+        key:'19',
         price :' 93,999',
-        image:{image20}
+        image:{image20},
+        shape:'oval'
     },
     {
         label:'Pear 0.5 D VS1 - #343805',
-        key: '21',
+        key: '20',
         price :' 94,999',
-        image:{image21}
+        image:{image21},
+        shape:'pear'
     },
     {
         label:'Pear 0.5 D VS2 - #343793',
-        key:'22',
+        key:'21',
         price :' 98,999',
-        image:{image22}
+        image:{image22},
+        shape:'pear'
     },
     {
         label:'Pear 0.5 F VS2 - #343803',
-        key:'23',
+        key:'22',
         price :' 96,999',
-        image:{image23}
+        image:{image23},
+        shape:'pear'
+
     },
     {
         label:'Pear 0.5 E VS1 - #343802',
-        key:'24',
+        key:'23',
         price :' 97,999',
-        image:{image24}
+        image:{image24},
+        shape:'pear'
     },
     {
         label:'Pear 0.5 D SI2 - #343792',
-        key:'29',
+        key:'24',
         price :' 1,91,999',
-        image:{image25}
+        image:{image25},
+        shape:'pear'
     },
     {
         label:'Pear 0.5 F VS1 - #343787',
-        key:'26',
+        key:'25',
         price :' 1,92,999',
-        image:{image26}
+        image:{image26},
+        shape:'pear'
     },
     {
         label:'Pear 0.5 H VS2 - #343780',
-        key:'27',
+        key:'26',
         price :' 1,93,999',
-        image:{image27}
+        image:{image27},
+        shape:'pear'
     },
     {
         label:'Round 0.5 D VS1 - #343670',
-        key:'28',
+        key:'27',
         price :' 1,96,999',
-        image:{image28}
+        image:{image28},
+        shape:'round'
     },
     {
         label:'Round 0.5 I SI2 - #343667',
-        key:'29',
+        key:'28',
         price :' 1,90,999',
-        image:{image29}
+        image:{image29},
+        shape:'round'
     },
     {
         label:'Round 0.5 I VVS2 - #343666',
-        key:'26',
+        key:'29',
         price :' 1,96,999',
-        image:{image30}
+        image:{image30},
+        shape:'round'
     },
     {
         label:'Round 0.5 G VS2 - #343664',
-        key:'37',
+        key:'30',
         price :' 1,97,999',
-        image:{image31}
+        image:{image31},
+        shape:'round'
     },
     {
         label:'Round 0.5 H SI1 - #343665',
-        key:'32',
+        key:'31',
         price :' 2,06,999',
-        image:{image32}
+        image:{image32},
+        shape:'round'
     },
     {
         label:'Round 0.5 E SI1 - #343661',
-        key:'33',
+        key:'32',
         price :' 2,36,999',
-        image:{image33}
+        image:{image33},
+        shape:'round'
     },
     {
         label:'Round 0.5 F VS1 - #343662',
-        key:'34',
+        key:'33',
         price :' 2,66,999',
-        image:{image34}
+        image:{image34},
+        shape:'round'
     },
     {
         label:'Round 0.5 E VS1 - #343660',
-        key:'35',
+        key:'34',
         price :' 2,06,999',
-        image:{image35}
+        image:{image35},
+        shape:'round'
     },
     {
         label:'Oval 0.5 F VVS1 - #343649',
-        key:'36',
+        key:'35',
         price :' 1,89,999',
-        image:{image36}
+        image:{image36},
+        shape:'oval'
     },
     {
         label:'Emerald 0.5 F VS2 - #343647',
-        key:'37',
+        key:'36',
         price :' 2,06,999',
-        image:{image37}
+        image:{image37},
+        shape:'emerald'
     },
     {
         label:'Round 0.5 F VVS1 - #343645',
-        key:'38',
+        key:'37',
         price :' 1,77,999',
-        image:{image38}
+        image:{image38},
+        shape:'round'   
     },
     {
         label:'Round 0.5 D IF - #343535',
-        key:'39',
+        key:'38',
         price :' 1,43,999',
-        image:{image39}
+        image:{image39},
+        shape:'round'
     },
     {
         label:'Heart 0.5 E VS2 - #343602',
-        key:'40',
+        key:'39',
         price :' 1,07,999',
-        image:{image40}
+        image:{image40},
+        shape:'heart'
     },
     {
         label:'Round 0.5 E SI1 - #343572',
-        key:'41',
+        key:'40',
         price :' 1,17,999',
-        image:{image41}
+        image:{image41},
+        shape:'round'
     },
     {
         label:'Emerald 0.5 D VVS2 - #343570',
-        key:'42',
+        key:'41',
         price :' 1,19,999',
-        image:{image42}
+        image:{image42},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VVS2 - #343567',
-        key:'43',
+        key:'42',
         price :' 1,87,999',
-        image:{image43}
+        image:{image43},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 G VS2 - #343566',
-        key:'44',
+        key:'43',
         price :' 1,28,999',
-        image:{image44}
+        image:{image44},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 H VS1 - #343563',
-        key:'45',
+        key:'44',
         price :' 1,77,999',
-        image:{image45}
+        image:{image45},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 E VS1 - #343562',
-        key:'46',
+        key:'45',
         price :' 1,01,999',
-        image:{image46}
+        image:{image46},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VS1 - #343559',
-        key:'47',
+        key:'46',
         price :' 1,02,999',
-        image:{image47}
+        image:{image47},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VVS2 - #343557',
-        key:'48',
+        key:'47',
         price :' 1,46,999',
-        image:{image48}
+        image:{image48},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VVS2 - #343554',
-        key:'49',
+        key:'48',
         price :' 1,29,999',
-        image:{image49}
+        image:{image49},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VVS2 - #343552',
-        key:'50',
+        key:'49',
         price :' 1,18,999',
-        image:{image50}
+        image:{image50},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VVS1 - #343550',
-        key:'51',
+        key:'50',
         price :' 1,15,999',
-        image:{image51}
+        image:{image51},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VVS2 - #343549',
-        key:'52',
+        key:'51',
         price :' 1,12,999',
-        image:{image25}
+        image:{image25},
+        shape:'emerald'
     },
     {
         label:'Round 0.5 D VS2 - #343530',
-        key:'53',
+        key:'52',
         price :' 1,11,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 I SI1 - #343529',
-        key:'54',
+        key:'53',
         price :' 1,89,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 H VS1 - #343524',
-        key:'55',
+        key:'54',
         price :' 1,54,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 E VS1 - #343521',
-        key:'56',
+        key:'55',
         price :' 1,04,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 H SI1 - #343516',
-        key:'57',
+        key:'56',
         price :' 1,86,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Heart 0.5 G SI1 - #343387',
-        key:'58',
+        key:'57',
         price :' 1,23,999',
-        image:{image25}
+        image:{image25},
+        shape:'heart'
     },
     {
         label:'Emerald 0.5 D VS1 - #343361',
-        key:'59',
+        key:'58',
         price :' 1,06,999',
-        image:{image25}
+        image:{image25},
+        shape:'emerald'
     },
     {
         label:'Pear 0.5 E VS2 - #343349',
-        key:'60',
+        key:'59',
         price :' 1,16,999',
-        image:{image25}
+        image:{image25},
+        shape:'pear'
     },
     {
         label:'Emerald 0.5 D VS2 - #343334',
-        key:'61',
+        key:'60',
         price :' 1,77,999',
-        image:{image25}
+        image:{image25},
+        shape:'emerald'
     },
     {
         label:'Round 0.5 F SI2 - #343298',
-        key:'62',
+        key:'61',
         price :' 1,76,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 G VS1 - #343295',
-        key:'63',
+        key:'62',
         price :' 1,25,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Oval 0.5 F VS2 - #343187',
-        key:'64',
+        key:'63',
         price :' 1,22,999',
-        image:{image25}
+        image:{image25},
+        shape:'oval'
     },
     {
         label:'Oval 0.5 D VS2 - #343185',
-        key:'65',
+        key:'64',
         price :' 1,36,999',
-        image:{image25}
+        image:{image25},
+        shape:'oval'
     },
     {
         label:'Pear 0.5 D VS1 - #343167',
-        key:'66',
+        key:'65',
         price :' 1,56,999',
-        image:{image25}
+        image:{image25},
+        shape:'pear'
     },
     {
         label:'Emerald 0.5 E VS1 - #343153',
-        key:'67',
+        key:'66',
         price :' 1,16,999',
-        image:{image25}
+        image:{image25},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 F VS1 - #343145',
-        key:'68',
+        key:'67',
         price :' 1,26,999',
-        image:{image25}
+        image:{image25},
+        shape:'emerald'
     },
     {
         label:'Emerald 0.5 D VVS2 - #343142',
-        key:'69',
+        key:'68',
         price :' 1,34,999',
-        image:{image25}
+        image:{image25},
+        shape:'emerald'
     },
     {
         label:'Round 0.5 F SI2 - #343118',
-        key:'70',
+        key:'69',
         price :' 1,24,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 D SI2 - #343114',
-        key:'71',
+        key:'70',
         price :' 2,50,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 D SI1 - #343108',
-        key:'72',
+        key:'71',
         price :' 1,99,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 D VS2 - #343105',
-        key:'73',
+        key:'72',
         price :' 1,91,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 E SI1 - #343104',
-        key:'74',
+        key:'73',
         price :' 1,92,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 F VS1 - #343100',
-        key:'75',
+        key:'74',
         price :' 2,07,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
     {
         label:'Round 0.5 G VS1 - #343102',
-        key:'76',
+        key:'75',
         price :' 2,06,999',
-        image:{image25}
+        image:{image25},
+        shape:'round'
     },
 
 ]

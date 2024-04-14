@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Header from '../../components/Header';
 import { data, images } from '../../assets/Pearls/naturaldiamonds/naturald';
 import Difference from '../../components/Difference';
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer';
 import difference1 from '../../assets/diffimg1.png';
 import difference2 from '../../assets/diffimg2.png';
 import Labgrowndata from '../../pages/Diamonds/labgrowndata.json';
@@ -14,7 +14,7 @@ const Productpage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   const { pagename, id } = useParams();
   let product;
   
@@ -36,7 +36,7 @@ const Productpage = () => {
       <h1 className='flex justify-end text-xl p-2 font-serif cursor-pointer border border-transparent bg-[#746274] text-white' style={{ marginTop: '210px', marginLeft: '1200px', width: '250px' }}>💎Passion Of Diamonds</h1>
       <hr style={{ marginRight: '70px', marginLeft: '200px', borderColor: '#782374', borderStyle: 'solid' }} />
 
-      <div className='flex justify-between h-auto w-full' style={{ marginTop: '120px' }}>
+      <div className='flex justify-between h-auto w-full' style={{ marginTop: '60px' }}>
         <div className='w-full h-auto mx-20'>
           {pagename.startsWith("labgrown") ? (
             <img className='border pt-4 pb-4' src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} style={{ height: '500px', width: '750px' }} />
@@ -102,7 +102,6 @@ const Productpage = () => {
       </div>
         </div>
       <Difference/>
-      <Footer/>
     </div>
   );
 };

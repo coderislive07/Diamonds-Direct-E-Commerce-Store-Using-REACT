@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import labgrowndata from './labgrowndata.json'; // Importing the JSON file
-import Footer from '../../components/footer'
+import React, { useState, useEffect,useMemo } from 'react';
+import labgrowndata from './labgrowndata.json'; 
+import { useParams } from 'react-router-dom';
+import Footer from '../../components/Footer'
 import { Link } from 'react-router-dom';
 import Preloader from '../../components/preloader/preloader';
+
 
 function Labgrowndiamond() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   const [sortOrder, setSortOrder] = useState('ascending');
+  const {shape}=useParams();
   useEffect(() => {
     setProducts(labgrowndata[0].Data.items);
   }, []);
@@ -19,24 +22,24 @@ function Labgrowndiamond() {
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
-  if (isLoading) {
-    return <Preloader />;
-  }
 
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === 'ascending' ? 'descending' : 'ascending');
   };
-  const sortByPrice = (a, b) => {
-    const priceA = parseFloat(a.price_efi);
-    const priceB = parseFloat(b.price_efi);
-    if (sortOrder === 'ascending') {
-      return priceA - priceB;
-    } else {
-      return priceB - priceA;
-    }
-  };
+  const sortedAndFilteredData=useMemo(()=>{
+    const filteredData = shape ? products.filter(item => item.shape === shape) :products;
+    return filteredData.sort((a, b) => {
+      const priceA = parseFloat(a.price.replace(/,/g, ''));
+      const priceB = parseFloat(b.price.replace(/,/g, ''));
+      return sortOrder === 'ascending' ? priceA - priceB : priceB - priceA;
+    });
+  }, [sortOrder, shape,products]);
+  if (isLoading) {
+    return <Preloader />;
+  }
 
-  const sortedProducts = [...products].sort(sortByPrice);
+
+
   return (
     <div className="container mx-auto top-40 px-5">
       <div className='my-10'>
@@ -45,7 +48,7 @@ function Labgrowndiamond() {
       </div>
       <div className="flex justify-between w-full">
         <div className='productslist'>
-      <h1 className='mx-20 my-20 text-[#8D8993]'>{sortedProducts.length} Products</h1> 
+      <h1 className='mx-20 my-20 text-[#8D8993]'>{sortedAndFilteredData.length} Products</h1> 
       </div>
       <div className='sorting my-20'>
         <label htmlFor="sort" className="mr-2">Sort By :</label>
@@ -57,7 +60,7 @@ function Labgrowndiamond() {
       </div>  
       <div className="grid  md:grid-cols-4 gap-4">
         {error && <div>Error: {error.message}</div>}
-        {sortedProducts.map(product => (
+        {sortedAndFilteredData.map(product => (
   
           <div key={product.sku_esi} className="p-4 rounded-lg cursor-pointer">
             <Link key={product.key} to={`/labgrowndiamond/${product.key}`}><img src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} className="w-full h-auto" /></Link>
@@ -69,7 +72,6 @@ function Labgrowndiamond() {
           </div>
         ))}
       </div>
-      <Footer/>
     </div>
   );
 }

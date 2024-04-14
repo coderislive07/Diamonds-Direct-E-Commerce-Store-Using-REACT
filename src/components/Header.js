@@ -102,9 +102,9 @@ export default function Header() {
                   <div className='Children4'>
                     {item.Children4 && item.Children4.map((childItem) => (
                       <div key={childItem.key}>
-                        <img className="text-sm font-medium font-sans mb-2 px-8" style={{ marginTop: '30px' }} src={childItem.label[childItem.key]} alt={childItem.key} />
+                        <img className="text-sm font-medium font-sans mb-2 px-4" style={{ marginTop: '30px' }} src={childItem.label[childItem.key]} alt={childItem.key} />
                         <ul className='text-black px-8'>
-                          {/* You can add list items or other content here if needed */}
+                          {/* You can add list items or other cont ent here if needed */}
                         </ul>
                       </div>
                     ))}
@@ -115,7 +115,7 @@ export default function Header() {
                         <h3 className="text-sm font-medium font-sans mb-2 px-8" style={{ marginTop: '30px' }}>{childItem.label}</h3>
                         <ul className='text-black px-8'>
                           {childItem.links.map((link) => (
-                            <li key={link.label} className='py-1 hover:text-[#782374]'>
+                            <li key={link.label} className='py-1  hover:text-[#782374]'>
                               <a href={link.to}>{link.label}</a>
                             </li>
                           ))}

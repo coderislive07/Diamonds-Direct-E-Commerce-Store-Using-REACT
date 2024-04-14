@@ -38,17 +38,17 @@ export const data = [
         label: "Natural Diamonds",
         key: "Natural Diamonds",
         links: [
-          { label: "Round", to: "#" },
-          { label: "Pear", to: "#" },
-          { label: "Cushion", to: "#" },
-          { label: "Emerald", to: "#" },
-          { label: "Oval", to: "#" },
-          { label: "Marquise", to: "#" },
-          { label: "Princess", to: "#" },
-          { label: "Heart", to: "#" },
-          { label: "Asscher", to: "#" },
-          { label: "Radiant", to: "#" },
-          { label: "Shop all", to: "#" }
+          { label: "Round", to: "/nd/round" },
+          { label: "Pear", to: "/nd/pear" },
+          { label: "Cushion", to: "/nd/cushion" },
+          { label: "Emerald", to: "/nd/emerald" },
+          { label: "Oval", to: "/nd/oval" },
+          { label: "Marquise", to: "/nd/marquise" },
+          { label: "Princess", to: "/nd/princess" },
+          { label: "Heart", to: "/nd/heart" },
+          { label: "Asscher", to: "/nd/asscher" },
+          { label: "Radiant", to: "/nd/radiant" },
+          { label: "Shop all", to: "/naturaldiamond" }
         ]
       }
     ],
@@ -57,17 +57,17 @@ export const data = [
       label: "Lab Grown Diamonds",
       key: "Lab Grown Diamonds",
       links: [
-        { label: "Round", to: "#" },
-        { label: "Pear", to: "#" },
-        { label: "Cushion", to: "#" },
-        { label: "Emerald", to: "#" },
-        { label: "Oval", to: "#" },
-        { label: "Marquise", to: "#" },
-        { label: "Princess", to: "#" },
-        { label: "Heart", to: "#" },
-        { label: "Asscher", to: "#" },
-        { label: "Radiant", to: "#" },
-        { label: "Shop all", to: "#" }
+        { label: "Round", to: "/lg/round" },
+        { label: "Pear", to: "/lg/pear" },
+        { label: "Cushion", to: "/lg/cushion" },
+        { label: "Emerald", to: "/lg/emerald" },
+        { label: "Oval", to: "/lg/oval" },
+        { label: "Marquise", to: "/lg/marquise" },
+        { label: "Princess", to: "/lg/princess" },
+        { label: "Heart", to: "/lg/heart" },
+        { label: "Asscher", to: "/lg/asscher" },
+        { label: "Radiant", to: "/lg/radiant" },
+        { label: "Shop all", to: "/labgrowndiamond" }
       ]
     }
   ],
@@ -76,7 +76,7 @@ export const data = [
         label: "EDUCATION",
         key: "EDUCATION",
         links: [
-          { label: "Diamond Education", to: "#" },
+          { label: "Diamond Education", to: "/diamondedu" },
           { label: "Lab Grown Diamond Education", to: "#" },
           { label: "Start with a Setting", to: "#" }
         ]
@@ -98,8 +98,8 @@ export const data = [
         label: "CREATE YOUR ENGAGEMENT RING",
         key: "CREATE YOUR ENGAGEMENT RING",
         links: [
-          { label: "Start with a Natural Diamond", to: "#" },
-          { label: "Start with a Lab Grown Diamond", to: "#" },
+          { label: "Start with a Natural Diamond", to: "/naturaldiamond" },
+          { label: "Start with a Lab Grown Diamond", to: "/labgrowndiamond" },
           { label: "Start with a Setting", to: "#" }
         ]
       },
@@ -155,7 +155,7 @@ export const data = [
         label: "EDUCATION",
         key: "EDUCATION2",
         links: [
-          { label: "Diamond Education", to: "#" },
+          { label: "Diamond Education", to: "/diamondedu" },
           { label: "Lab Grown Diamond Education", to: "#" },
           { label: "Start with a Setting", to: "#" }
         ]
@@ -285,7 +285,7 @@ export const data = [
         label: "EDUCATION",
         key: "EDUCATION",
         links: [
-          { label: "Diamond Education", to: "#" },
+          { label: "Diamond Education", to: "/diamondedu" },
           { label: "Lab Grown Diamond Education", to: "#" },
           { label: "Start with a Setting", to: "#" }
         ]
@@ -340,7 +340,7 @@ export const data = [
         label: "EDUCATION",
         key: "EDUCATION",
         links: [
-          { label: "Diamond Education", to: "#" },
+          { label: "Diamond Education", to: "/diamondedu" },
           { label: "Lab Grown Diamond Education", to: "#" },
           { label: "Gemstone Education", to: "#" },
           { label: "Pearl Education", to: "#" },
