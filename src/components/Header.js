@@ -4,6 +4,13 @@ import { data } from './links';
 import { Link } from 'react-router-dom';
 import { location, appointment, FAQ, logo, search, wishlist, account, cart } from '../assets/index';
 import './Header.css';
+import image1 from '../assets/Brands/1.webp';
+import image2 from '../assets/Brands/2.webp';
+import image3 from '../assets/Brands/3.webp';
+import image4 from '../assets/Brands/4.webp';
+import image5 from '../assets/Brands/5.webp';
+const images=[image1,image2,image3,image4,image5];
+
 
 export default function Header() {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -49,6 +56,8 @@ export default function Header() {
                     <h3 className="text-sm font-medium font-sans mb-2 px-8" style={{ marginTop: '30px' }}>{childItem.label}</h3>
                         <ul className='text-black px-8'>
                           {childItem.links.map((link) => (
+                            
+
                             <li key={link.label} className='py-1 hover:text-[#782374]'>
                             <Link to={link.to}>{link.label}</Link>
                             </li>
@@ -123,6 +132,23 @@ export default function Header() {
                       </div>
                     ))}
                   </div>
+                  <div className='Children6'>
+  {item.Children6 && item.Children6.map((childItem) => (
+    <div key={childItem.key}>
+      <h3 className="text-sm font-medium font-sans mb-2 px-8" style={{ marginTop: '30px' }}>{childItem.label}</h3>
+      <ul className='text-black px-8'>
+        {childItem.links.map((link, index) => (
+          <li key={index} className='py-1'>
+
+            <img className='w-52'src={images[index]} alt={`Design ${index + 1}`} />
+          
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</div>
+
                 </div>
               </div>    
             )}

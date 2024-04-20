@@ -1,4 +1,10 @@
-import { diamondshopnow ,finejewelryshopnow} from "../assets/index";
+import { diamondshopnow ,finejewelryshopnow } from "../assets/index";
+import diamonddesign from '../assets/diamonddesign.webp';
+import image1 from '../assets/Brands/1.webp';
+import image2 from '../assets/Brands/2.webp';
+import image3 from '../assets/Brands/3.webp';
+import image4 from '../assets/Brands/4.webp';
+import image5 from '../assets/Brands/5.webp';
 export const data = [
   {
     label: "DIAMONDS",
@@ -12,7 +18,7 @@ export const data = [
         links: [
           { label: "Start with a Natural Diamond", to: "/naturaldiamond" },
           { label: "Start with a Lab Grown Diamond", to: "/labgrowndiamond" },
-          { label: "Start with a Setting", to: "#" }
+
         ]
       },
       {
@@ -77,8 +83,7 @@ export const data = [
         key: "EDUCATION",
         links: [
           { label: "Diamond Education", to: "/diamondedu" },
-          { label: "Lab Grown Diamond Education", to: "#" },
-          { label: "Start with a Setting", to: "#" }
+          { label: "Lab Grown Diamond Education", to: "/labgrowndiamondedu" },
         ]
       }
   ],
@@ -100,7 +105,7 @@ export const data = [
         links: [
           { label: "Start with a Natural Diamond", to: "/naturaldiamond" },
           { label: "Start with a Lab Grown Diamond", to: "/labgrowndiamond" },
-          { label: "Start with a Setting", to: "#" }
+       
         ]
       },
       {
@@ -125,28 +130,26 @@ export const data = [
         label: "SETTINGS BY STYLE",
         key: "SETTINGS BY STYLE",
         links: [
-          { label: "Solitaire", to: "#" },
-          { label: "Halo", to: "#" },
-          { label: "Diamond Accented", to: "#" },
-          { label: "Three Stone", to: "#" },
-          { label: "Twist", to: "#" },
-          { label: "Hidden Accents", to: "#" },
-          { label: "Shop All Settings", to: "#" },
+          { label: "Solitaire", to: "/engsolitaire" },
+          { label: "Halo", to: "/enghalo" },
+          { label: "Diamond Accented", to: "/engdiamondaccented" },
+          { label: "Three Stone", to: "/engthreestone" },
+          { label: "Twist", to: "/engtwist" },
+      
           
         ]
       }
     ],
-    Children3: [
+    Children6: [
       {
         label: "SETTINGS BY FEATURED DESIGNERS",
         key: "SETTINGS BY FEATURED DESIGNERS",
         links: [
-          { label: "Shop Diamonds Direct Designs", to: "#" },
-          { label: "Shop Michael M", to: "#" },
-          { label: "Shop Simon G.", to: "#" },
-          { label: "Shop Tacori", to: "#" },
-          { label: "Shop Veraggio", to: "#" },
-          { label: "View All Designers", to: "#" },
+          { label: {image1}  },
+          { label: {image2} },
+          { label: {image3}},
+          { label: {image4}},
+          { label: {image5} },
         ]
       }
     ],
@@ -156,8 +159,7 @@ export const data = [
         key: "EDUCATION2",
         links: [
           { label: "Diamond Education", to: "/diamondedu" },
-          { label: "Lab Grown Diamond Education", to: "#" },
-          { label: "Start with a Setting", to: "#" }
+          { label: "Lab Grown Diamond Education", to: "/labgrowndiamondedu" },
         ]
       }
   ],
@@ -196,19 +198,18 @@ export const data = [
         ]
       },
     ],
-    Children2: [
+    Children6: [
       {
-      label: "WEDDING BANDS BY FEATURED DESIGNERS",
-        key: "WEDDING BANDS BY FEATURED DESIGNERS",
+        label: "SETTINGS BY FEATURED DESIGNERS",
+        key: "SETTINGS BY FEATURED DESIGNERS",
         links: [
-          { label: "Shop Diamonds Direct Designs", to: "#" },
-          { label: "Shop Michael M", to: "#" },
-          { label: "Shop Simon G.", to: "#" },
-          { label: "Shop Tacori", to: "#" },
-          { label: "Shop Verragio", to: "#" },
-          { label: "View All Designers", to: "#" },
+          { label: {image1}  },
+          { label: {image2} },
+          { label: {image3}},
+          { label: {image4}},
+          { label: {image5} },
         ]
-      },
+      }
     ],
   },
   { 
@@ -217,77 +218,55 @@ export const data = [
     margins:"-550px",
     children: [
       {
-        label: "CREATE YOUR ENGAGEMENT RING",
+        label: "DIAMOND CLASSICS",
         key: "CREATE YOUR ENGAGEMENT RING",
         links: [
-          { label: "Start with a Natural Diamond", to: "#" },
-          { label: "Start with a Lab Grown Diamond", to: "#" },
-          { label: "Start with a Setting", to: "#" }
-        ]
-      },
-      {
-        label: "CUSTOMIZE YOUR ENGAGEMENT RING",
-        key: "CUSTOMIZE YOUR ENGAGEMENT RING",
-        links: [
-          { label: "Diamonds Direct 3D Ring Studio", to: "#" }
-        ]
-      },
-      {
-        label: "PRESET ENGAGEMENT RINGS",
-        key: "PRESET ENGAGEMENT RINGS",
-        links: [
-          { label: "One of a Kind Engagement Rings", to: "#" },
-          { label: "Ready to Wear Engagement Rings", to: "#" }
+          { label: "Diamond Studs", to: "#" },
+          { label: "Diamond Hoops", to: "#" },
+          { label: "Diamond Necklaces & Pendants", to: "#" },
+          { label: "Diamond Bracelets", to: "#" },
+          { label: "Lab Grown Diamond Jewelery", to: "#" }
         ]
       },
      
     ],
     Children1: [
       {
-        label: "Natural Diamonds",
-        key: "Natural Diamonds",
+        label: "WOMEN'S JEWELRY",
+        key: "WOMEN'S JEWELRY",
         links: [
-          { label: "Round", to: "#" },
-          { label: "Pear", to: "#" },
-          { label: "Cushion", to: "#" },
-          { label: "Emerald", to: "#" },
-          { label: "Oval", to: "#" },
-          { label: "Marquise", to: "#" },
-          { label: "Princess", to: "#" },
-          { label: "Heart", to: "#" },
-          { label: "Asscher", to: "#" },
-          { label: "Radiant", to: "#" },
-          { label: "Shop all", to: "#" }
+          { label: "Earrings", to: "#" },
+          { label: "Necklaces & Pendants", to: "#" },
+          { label: "Bracelets", to: "#" },
+          { label: "Fashion Rings", to: "#" },
+          { label: "SALE", to: "#" },
+          { label: "Shop All", to: "#" },
         ]
       }
     ],
     Children2: [
     {
-      label: "Lab Grown Diamonds",
-      key: "Lab Grown Diamonds",
+      label: "MEN'S JEWELRY",
+      key: "MEN'S JEWELRY",
       links: [
-        { label: "Round", to: "#" },
-        { label: "Pear", to: "#" },
-        { label: "Cushion", to: "#" },
-        { label: "Emerald", to: "#" },
-        { label: "Oval", to: "#" },
-        { label: "Marquise", to: "#" },
-        { label: "Princess", to: "#" },
-        { label: "Heart", to: "#" },
-        { label: "Asscher", to: "#" },
-        { label: "Radiant", to: "#" },
-        { label: "Shop all", to: "#" }
+        { label: "Bracelets", to: "#" },
+        { label: "Chains", to: "#" },
+        { label: "Pendants", to: "#" },
+        { label: "Rings", to: "#" },
+        { label: "Shop All", to: "#" },
       ]
     }
   ],
     Children3: [
       {
-        label: "EDUCATION",
-        key: "EDUCATION",
+        label: "HIGH JEWELRY COLLECTION",
+        key: "HIGH JEWELRY COLLECTION",
         links: [
-          { label: "Diamond Education", to: "/diamondedu" },
-          { label: "Lab Grown Diamond Education", to: "#" },
-          { label: "Start with a Setting", to: "#" }
+          { label: "Earrings", to: "#" },
+          { label: "Necklaces", to: "#" },
+          { label: "Bracelets", to: "#" },
+          { label: "Rings", to: "#" },
+          { label: "Shop All", to: "#" },
         ]
       }
   ],

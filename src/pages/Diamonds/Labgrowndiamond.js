@@ -15,7 +15,6 @@ function Labgrowndiamond() {
     setProducts(labgrowndata[0].Data.items);
   }, []);
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -41,7 +40,7 @@ function Labgrowndiamond() {
 
 
   return (
-    <div className="container mx-auto top-40 px-5">
+    <div className="container mx-auto top-32 px-5 pb-28">
       <div className='my-10'>
         <h1 className='text-black font-medium font-sans text-3xl mx-20'>Lab Grown Diamonds</h1>
         <h1 className='mx-20 py-4 font-sans font-normal'>Customize your engagement ring with high-quality, ethically sourced lab-grown diamonds.</h1>

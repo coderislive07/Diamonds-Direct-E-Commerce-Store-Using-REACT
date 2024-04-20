@@ -5,14 +5,12 @@ import './Naturaldiamond.css';
 import wishlist from '../../assets/wishlist.svg';
 import Tippy from '@tippyjs/react';
 import { Link } from 'react-router-dom';
-import Footer from '../../components/Footer';
 import Preloader from '../../components/preloader/preloader';
 
 export default function Naturaldiamond() {
   const [sortOrder, setSortOrder] = useState('ascending');
   const [isLoading, setIsLoading] = useState(true);
   const { shape } = useParams();
-
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 1000);
     return () => clearTimeout(timer);
@@ -30,11 +28,9 @@ export default function Naturaldiamond() {
       return sortOrder === 'ascending' ? priceA - priceB : priceB - priceA;
     });
   }, [sortOrder, shape]);
-
   if (isLoading) {
     return <Preloader />;
   }
-
   return (
     <div className='w-full h-auto'>
       <div className='my-52'>

@@ -7,27 +7,38 @@ import Footer from '../../components/Footer';
 import difference1 from '../../assets/diffimg1.png';
 import difference2 from '../../assets/diffimg2.png';
 import Labgrowndata from '../../pages/Diamonds/labgrowndata.json';
+import solitaire from '../../assets/Pearls/solitaire/solitaire.json';
+import halo from '../../assets/Pearls/Halo/halo.json';
+import threestone from '../../assets/Pearls/threestone/threestone.json';
+import twist from '../../assets/Pearls/twist/twist.json';
+import diamondaccented from '../../assets/Pearls/Diamondaccented/diamondaccented.json';
 
 
 
 const Productpage = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0,0);
   }, []);
-
-  const { pagename, id } = useParams();
+  const data1 = {
+    solitaire: solitaire[0].Data.items,
+    halo: halo[0].Data.items,
+    threestone: threestone[0].Data.items,
+    twist: twist[0].Data.items,
+    diamondaccented: diamondaccented[0].Data.items,
+  };  
+  const { pagename, id  } = useParams();
   let product;
-  
   if (pagename.startsWith("natural")) {
     product = data.find(item => item.key === id);
   } else if(pagename.startsWith("labgrown")) {
     product = Labgrowndata[0].Data.items.find(item => item.key === id);
   }
-
+   else if(pagename.startsWith("engagement")) {
+    product = solitaire[0].Data.items.find(item => item.key === id);
+  }
   if (!product) {
     return <div>Product not found</div>;
   }
-
   return (
     <div className='w-full h-auto'>
       <div className='header'>
@@ -40,10 +51,16 @@ const Productpage = () => {
         <div className='w-full h-auto mx-20'>
           {pagename.startsWith("labgrown") ? (
             <img className='border pt-4 pb-4' src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} style={{ height: '500px', width: '750px' }} />
-          ) : (
-            <img className='border pt-4 pb-4' src={images[product.key]} alt={product.label} style={{ height: '500px', width: '750px' }} />
+          ) : pagename.startsWith("engagement")? (
+            
+            <img className='border pt-4 pb-4' src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} style={{ height: '500px', width: '750px' }} />
+          ) : ( 
+            <img className='border pt-4 pb-4' src={images[0].url_thumbnail} alt={product.label} style={{ height: '500px', width: '750px' }} />
+            
           )}
         </div>
+
+        
         <div className='w-full h-full' style={{ marginRight: '150px' }}>
           <h2 className='text-3xl'>{product.label}</h2>
           <p className='text-[#782374] my-2 text-2xl'>₹{product.price}</p>
@@ -71,8 +88,6 @@ const Productpage = () => {
              <h1>Flexible Payment Options: <em>*subject to approval</em></h1>
             <h1 className='my-2  font-normal text-[#782374]'>💎Special financing options with Wells Fargo. <a className='text-[#782374]' href="#">Learn more</a></h1>
             </div> 
-      
-
           </div>
               
           <div className='mx-6 flex gap-32 my-8 w-full'>
