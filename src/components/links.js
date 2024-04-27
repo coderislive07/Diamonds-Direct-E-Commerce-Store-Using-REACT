@@ -306,7 +306,7 @@ export const data = [
         links: [
           { label: "Our Story", to: "#" },
           { label: "Warranties & Guarantees", to: "#" },
-          { label: "FAQ", to: "#" },
+          { label: "FAQ", to: "/faq" },
           { label: "Diamonds Direct Foundation", to: "#" },
           { label: "Blog", to: "#" },
           { label: "Careers", to: "#" },
