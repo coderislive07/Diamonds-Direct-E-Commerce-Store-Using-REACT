@@ -12,7 +12,7 @@ import Diamondedu from '../src/pages/Diamonds/diamondedu';
 import Engagement from '../src/pages/Engagement/engagement'
 import Labgrowndiamondedu from './pages/Diamonds/Labgrowndiamondedu';
 import FAQ from '../src/pages/FAQ';
-import cart from '../src/pages/cart';
+import cart from '../src/components/cart';
 import { Provider } from 'react-redux';
 import './App.css';
 
