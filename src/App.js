@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from '../src/pages/Home';
 import Header from '../src/components/Header';
@@ -14,13 +14,23 @@ import Labgrowndiamondedu from './pages/Diamonds/Labgrowndiamondedu';
 import FAQ from '../src/pages/FAQ';
 import cart from '../src/components/cart';
 import { Provider } from 'react-redux';
+import app from './firebase';
+import Signin from "./pages/signin";
+
 import './App.css';
 
 const App = () => {
+  const [isSliderOpen, setIsSliderOpen] = useState(false);
+
+  const handleAccountIconClick = () => {
+    setIsSliderOpen(!isSliderOpen);
+  };
+
   return (
-    <>
+  
       <Router>
-        <Header/>
+        <Header onAccountIconClick={handleAccountIconClick}/>
+        {isSliderOpen && <Signin onAccountIconClick={handleAccountIconClick} />}
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/cart" element={<Cart/>} />
@@ -37,8 +47,8 @@ const App = () => {
           <Route path ="/cart"element={<Cart/>} />
         </Routes>
         <Footer/> 
+    
       </Router>
-    </>
   );
 }
 

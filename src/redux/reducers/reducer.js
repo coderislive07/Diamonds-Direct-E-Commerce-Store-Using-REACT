@@ -13,8 +13,7 @@ export const Cartreducer=(state=INIT_STATE,action)=>{
         case "RMV_CART":
             return{
                 ...state,
-                carts:state.carts.filter((item)=>item.key!==action.payload)
-               
+                carts:state.carts.filter((item)=>item.key!==action.payload) 
             }
             default:
                 return state
