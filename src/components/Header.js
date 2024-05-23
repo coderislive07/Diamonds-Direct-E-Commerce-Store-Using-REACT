@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 import Tippy from '@tippyjs/react';
 import { data } from './links';
@@ -15,47 +15,29 @@ import { useSelector } from 'react-redux';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { app } from '../firebase';
 import Preloader from './preloader/preloader';
-
-
-
-
 const images = [image1, image2, image3, image4, image5];
-
-
 const auth = getAuth(app);
-
 export default function Header({ onAccountIconClick }) {
   
   const [user, setUser] = useState(null);
   const [userImage, setUserImage] = useState(null);
   const [showSignOut , setShowSignOut] = useState(false);
   const [showPreloader, setShowPreloader] = useState(false);
-
-  
-
-
   const cartItems = useSelector((state) =>
     state.Cartreducer.carts);
+  const[cartItemsRedux,setCartItemsRedux]=useState(cartItems)
+
   console.log(cartItems);
-  
   const [hoveredItem, setHoveredItem] = useState(null);
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-      if (user.photoURL) {
-          setUserImage(user.photoURL);
-        }
-      } else {
-        setUser(null);
-      }
-
+        setUserImage(user.photoURL);
+      } 
     });
-    
-
     return () => unsubscribe();
   }, []);
-
   const handleMouseEnter = (itemKey) => {
     setHoveredItem(itemKey);
   };
@@ -66,10 +48,6 @@ export default function Header({ onAccountIconClick }) {
   const showSignOutMenu = () => {
     setShowSignOut(!showSignOut);
   }
-
-
- 
-
   const signoutaccount = () => {
     setShowPreloader(true); 
     auth.signOut().then(() => {
