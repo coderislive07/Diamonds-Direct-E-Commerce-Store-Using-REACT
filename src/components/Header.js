@@ -10,7 +10,6 @@ import image2 from '../assets/Brands/2.webp';
 import image3 from '../assets/Brands/3.webp';
 import image4 from '../assets/Brands/4.webp';
 import image5 from '../assets/Brands/5.webp';
-import { Cartreducer } from '../redux/reducers/reducer';
 import { useSelector } from 'react-redux';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { app } from '../firebase';
@@ -18,16 +17,13 @@ import Preloader from './preloader/preloader';
 const images = [image1, image2, image3, image4, image5];
 const auth = getAuth(app);
 export default function Header({ onAccountIconClick }) {
-  
   const [user, setUser] = useState(null);
   const [userImage, setUserImage] = useState(null);
   const [showSignOut , setShowSignOut] = useState(false);
   const [showPreloader, setShowPreloader] = useState(false);
-  const cartItems = useSelector((state) =>
-    state.Cartreducer.carts);
-  const[cartItemsRedux,setCartItemsRedux]=useState(cartItems)
+  const quantities = useSelector((state) => state.Cartreducer.quantities);
 
-  console.log(cartItems);
+  console.log(quantities)
   const [hoveredItem, setHoveredItem] = useState(null);
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -59,7 +55,6 @@ export default function Header({ onAccountIconClick }) {
       console.log(error);
     });
   }
-
   return (
     
     <div className='header-container relative '>
@@ -99,7 +94,7 @@ export default function Header({ onAccountIconClick }) {
           )}
         <Link to="/cart"><Tippy content="Cart"><img className='w-8 relative mx-5  cursor-pointer icon-container ' src={cart} alt="Cart" title='Cart' /></Tippy></Link>
         <span style={{bottom:'54%'}}className='bg-[#746274] text-white rounded-full bottom-20 absolute right-6  flex items-center justify-center w-6 h-6'>
-        {cartItems.length}
+        {quantities.reduce((accumulator, currentVal) => accumulator + currentVal, 0)}
       </span>
       </div>
       <div className='flex mx-36 my-8 font-sans font-medium px-4 cursor-pointer'>

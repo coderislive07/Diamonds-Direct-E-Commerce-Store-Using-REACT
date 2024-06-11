@@ -11,12 +11,12 @@ const provider = new GoogleAuthProvider();
 const Signin = ({ onAccountIconClick }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // useNavigate hook
+  const navigate = useNavigate(); 
 
   const signinuser = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then(() => {
-        navigate('/'); // Navigate to "/"
+        navigate('/'); 
         {onAccountIconClick()}
       })
       .catch(e => alert(e.message));

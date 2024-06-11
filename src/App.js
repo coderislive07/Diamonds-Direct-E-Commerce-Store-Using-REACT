@@ -27,7 +27,6 @@ const App = () => {
   };
 
   return (
-  
       <Router>
         <Header onAccountIconClick={handleAccountIconClick}/>
         {isSliderOpen && <Signin onAccountIconClick={handleAccountIconClick} />}

@@ -1,20 +1,25 @@
-// actions.js
-export const ADD = (item) => {
+export const ADD=(item)=>{
     return {
-        type: "ADD_CART",
-        payload: item
+        type:"ADD_CART",
+        payload:item
+    }   
+}
+export const DLT=(id)=>{
+    return {
+        type:"RMV_CART",
+        payload:id
+    }
+}
+export const updateCartItems = (cartItems) => {
+    return {
+      type: 'UPDATE_CART_ITEMS',
+      payload: cartItems,
     };
-};
-export const DLT = (id) => {
+}
+export const updateQuantities = (quantities) => {
     return {
-        type: "RMV_CART",
-        payload: id
+      type: 'UPDATE_QUANTITIES',
+      payload: quantities,
     };
 };
 
-export const UPDATE_QUANTITY = (index, quantity) => {
-    return {
-        type: "UPDATE_QUANTITY",
-        payload: { index, quantity }
-    };
-};

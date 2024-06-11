@@ -13,7 +13,8 @@ import halo from '../../assets/Pearls/Halo/halo.json';
 import threestone from '../../assets/Pearls/threestone/threestone.json';
 import twist from '../../assets/Pearls/twist/twist.json';
 import {Link} from 'react-router-dom';
-import {ADD} from '../../redux/actions/actions';
+import {ADD,updateQuantities} from '../../redux/actions/actions';
+
 
 import diamondaccented from '../../assets/Pearls/Diamondaccented/diamondaccented.json';
 import { useDispatch } from 'react-redux';
@@ -46,28 +47,13 @@ const Productpage = () => {
     return <div>Product not found</div>;
   }
 
- const notify=()=>{
-  toast.success('Product Added to Cart', {
-    position: "top-center",
-    autoClose: 1000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    });
-
- }
-
 
   const send=(e)=>{
-    notify()
-    setTimeout(() => {
-      dispatch(ADD(e));
-    }, 2000);
-   
-  
+    dispatch(ADD(e))
   }
+
+
+   
 
 
   return (
@@ -77,14 +63,11 @@ const Productpage = () => {
       </div>
       <h1 className='flex justify-end text-xl p-2 font-serif cursor-pointer border border-transparent bg-[#746274] text-white' style={{ marginTop: '210px', marginLeft: '1200px', width: '250px' }}>💎Passion Of Diamonds</h1>
       <hr style={{ marginRight: '70px', marginLeft: '200px', borderColor: '#782374', borderStyle: 'solid' }} />
- 
-      <div className='flex justify-between h-auto w-full' style={{ marginTop: '60px' }}>
-        
+      <div className='flex justify-between h-auto w-full' style={{ marginTop: '60px' }}> 
         <div className='w-full h-auto mx-20'>
           {pagename.startsWith("labgrown") ? (
             <img className='border pt-4 pb-4' src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} style={{ height: '500px', width: '750px' }} />
-          ) : pagename.startsWith("engagement")? (
-            
+          ) : pagename.startsWith("engagement")? ( 
             <img className='border pt-4 pb-4' src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} style={{ height: '500px', width: '750px' }} />
           ) : pagename.startsWith("natural") ? ( 
             <img className='border pt-4 pb-4' src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} style={{ height: '500px', width: '750px' }} />
