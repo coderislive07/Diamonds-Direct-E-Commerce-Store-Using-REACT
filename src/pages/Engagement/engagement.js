@@ -29,9 +29,8 @@ export default function Engagement() {
   const toggleSortOrder = () => {
     setSortOrder(sortOrder === 'ascending' ? 'descending' : 'ascending');
   };
-
   const sortedAndFilteredData = useMemo(() => {
-    const products = style ? data[style] : data.solitaire; 
+  const products = style && data[style] ? data[style] : data.solitaire;
     return products.sort((a, b) => {
       const priceA = typeof a.price === 'string' ? parseFloat(a.price.replace(/,/g, '')) : a.price;
       const priceB = typeof b.price === 'string' ? parseFloat(b.price.replace(/,/g, '')) : b.price;
@@ -64,7 +63,7 @@ export default function Engagement() {
         <div className="grid md:grid-cols-4 gap-4">
           {sortedAndFilteredData.map(product => (
             <div key={product.key} className="p-4 rounded-lg cursor-pointer">
-              <Link key={product.key} to={`/engagement/${product.key}`}>
+              <Link key={product.key} to={`/${style}/${product.key}`}>
                 <img src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} className="w-full h-auto" />
               </Link>
               <div className="mt-4">

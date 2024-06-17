@@ -130,13 +130,11 @@ export const data = [
         label: "SETTINGS BY STYLE",
         key: "SETTINGS BY STYLE",
         links: [
-          { label: "Solitaire", to: "/engsolitaire" },
-          { label: "Halo", to: "/enghalo" },
-          { label: "Diamond Accented", to: "/engdiamondaccented" },
-          { label: "Three Stone", to: "/engthreestone" },
-          { label: "Twist", to: "/engtwist" },
-      
-          
+          { label: "Solitaire", to: "/eng/solitaire" },
+          { label: "Halo", to: "/eng/halo" },
+          { label: "Diamond Accented", to: "/eng/diamondaccented" },
+          { label: "Three Stone", to: "/eng/threestone" },
+          { label: "Twist", to: "/eng/twist" },
         ]
       }
     ],

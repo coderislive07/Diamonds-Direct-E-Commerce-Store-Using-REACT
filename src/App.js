@@ -16,12 +16,9 @@ import cart from '../src/components/cart';
 import { Provider } from 'react-redux';
 import app from './firebase';
 import Signin from "./pages/signin";
-
 import './App.css';
-
 const App = () => {
   const [isSliderOpen, setIsSliderOpen] = useState(false);
-
   const handleAccountIconClick = () => {
     setIsSliderOpen(!isSliderOpen);
   };
@@ -30,9 +27,11 @@ const App = () => {
       <Router>
         <Header onAccountIconClick={handleAccountIconClick}/>
         {isSliderOpen && <Signin onAccountIconClick={handleAccountIconClick} />}
+
+
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/cart" element={<Cart/>} />
+          <Route path="/cart" element={<Cart onAccountIconClick={handleAccountIconClick} />} />
           <Route path="/naturaldiamond"element={<Naturaldiamond/>} />
           <Route path="/nd/:shape"element={<Naturaldiamond/>} />
           <Route path="/labgrowndiamond"element={<Labgrowndiamond/>}/>
@@ -40,10 +39,10 @@ const App = () => {
           <Route path="/location"element={<Location/>} />
           <Route path =":pagename/:id"element={<Productpage/>} />
           <Route path="/diamondedu"element={<Diamondedu/>} />
-          <Route path="/:pagename/"element={<Engagement/>} />
+          <Route path="/eng/:style" element={<Engagement />} />
           <Route path="/labgrowndiamondedu"element={<Labgrowndiamondedu/>} />
           <Route path="/faq"element={<FAQ/>} />
-          <Route path ="/cart"element={<Cart/>} />
+          <Route path ="/cart"element={<Cart/>} />  
         </Routes>
         <Footer/> 
     
@@ -52,3 +51,4 @@ const App = () => {
 }
 
 export default App;
+

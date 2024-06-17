@@ -3,59 +3,51 @@ import { useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from '../../components/Header';
-import Difference from '../../components/Difference';
-import difference1 from '../../assets/diffimg1.png';
-import difference2 from '../../assets/diffimg2.png';
 import naturaldiamondsdata from '../../assets/Pearls/naturaldiamonds/naturald.json';
 import Labgrowndata from '../../pages/Diamonds/labgrowndata.json';
 import solitaire from '../../assets/Pearls/solitaire/solitaire.json';
 import halo from '../../assets/Pearls/Halo/halo.json';
 import threestone from '../../assets/Pearls/threestone/threestone.json';
 import twist from '../../assets/Pearls/twist/twist.json';
-import {Link} from 'react-router-dom';
-import {ADD,updateQuantities} from '../../redux/actions/actions';
-
-
 import diamondaccented from '../../assets/Pearls/Diamondaccented/diamondaccented.json';
 import { useDispatch } from 'react-redux';
+import { ADD } from '../../redux/actions/actions';
+import difference1 from '../../assets/diffimg1.png';
+import difference2 from '../../assets/diffimg2.png';
+import Difference from '../../components/Difference';
 
 const Productpage = () => {
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
 
   const dispatch = useDispatch();
-  const data1 = {
-    naturald:naturaldiamondsdata[0].Data.items,
-    solitaire: solitaire[0].Data.items,
-    halo: halo[0].Data.items,
-    threestone: threestone[0].Data.items,
-    twist: twist[0].Data.items,
-    diamondaccented: diamondaccented[0].Data.items,
-  };  
-  const { pagename, id  } = useParams();
-  let product;
-  if (pagename.startsWith("natural")) {
-    product = naturaldiamondsdata[0].Data.items.find(item => item.key=== id);
-  } else if(pagename.startsWith("labgrown")) {
-    product = Labgrowndata[0].Data.items.find(item => item.key === id);
-  }
-   else if(pagename.startsWith("engagement")) {
-    product = solitaire[0].Data.items.find(item => item.key === id);
-  }
+  const { pagename, id } = useParams();
+  const dataMap = {
+    naturald: naturaldiamondsdata,
+    labgrown: Labgrowndata,
+    solitaire: solitaire,
+    halo: halo,
+    threestone: threestone,
+    twist: twist,
+    diamondaccented: diamondaccented,
+  };
+  const getProduct = (pagename, id) => {
+    const data = dataMap[pagename];
+    if (data) {
+      return data[0].Data.items.find(item => item.key === id);
+    }
+    return null;
+  };
+
+  const product = getProduct(pagename, id);
   if (!product) {
     return <div>Product not found</div>;
   }
 
-
-  const send=(e)=>{
-    dispatch(ADD(e))
-  }
-
-
-   
-
-
+  const send = (e) => {
+    dispatch(ADD(e));
+  };
   return (
     <div className='w-full h-auto'>
       <div className='header'>
