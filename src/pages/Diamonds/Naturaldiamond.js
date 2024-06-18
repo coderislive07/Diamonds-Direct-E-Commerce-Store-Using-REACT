@@ -62,7 +62,7 @@ function Naturaldiamond() {
         {sortedAndFilteredData.map(product => (
   
           <div key={product.key} className="p-4 rounded-lg cursor-pointer">
-            <Link key={product.key} to={`/naturaldiamond/${product.key}`}><img src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} className="w-full h-auto" /></Link>
+            <Link key={product.key} to={`/naturald/${product.key}`}><img src={JSON.parse(product.images)[0].url_thumbnail} alt={product.label} className="w-full h-auto" /></Link>
             <div className="mt-4">
               <h1 className='hover:text-[#782374] text-lg font-medium'>{product.label}</h1>
               <h1 className='text-[#782374] text-lg font-semibold'>₹{product.price}</h1>

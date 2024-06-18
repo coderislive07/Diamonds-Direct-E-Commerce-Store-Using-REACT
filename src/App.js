@@ -33,9 +33,9 @@ const App = () => {
           <Route path="/" element={<Home/>} />
           <Route path="/cart" element={<Cart onAccountIconClick={handleAccountIconClick} />} />
           <Route path="/naturaldiamond"element={<Naturaldiamond/>} />
-          <Route path="/nd/:shape"element={<Naturaldiamond/>} />
+          <Route path="/nd/:style"element={<Naturaldiamond/>} />
           <Route path="/labgrowndiamond"element={<Labgrowndiamond/>}/>
-          <Route path="/lg/:shape"element={<Labgrowndiamond/>}/>
+          <Route path="/lg/:style"element={<Labgrowndiamond/>}/>
           <Route path="/location"element={<Location/>} />
           <Route path =":pagename/:id"element={<Productpage/>} />
           <Route path="/diamondedu"element={<Diamondedu/>} />

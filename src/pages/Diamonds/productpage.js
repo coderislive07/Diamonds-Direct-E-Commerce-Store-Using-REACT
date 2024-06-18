@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from '../../components/Header';
-import naturaldiamondsdata from '../../assets/Pearls/naturaldiamonds/naturald.json';
+import naturald from '../../assets/Pearls/naturaldiamonds/naturald.json';
 import Labgrowndata from '../../pages/Diamonds/labgrowndata.json';
 import solitaire from '../../assets/Pearls/solitaire/solitaire.json';
 import halo from '../../assets/Pearls/Halo/halo.json';
@@ -24,7 +24,7 @@ const Productpage = () => {
   const dispatch = useDispatch();
   const { pagename, id } = useParams();
   const dataMap = {
-    naturald: naturaldiamondsdata,
+    naturald: naturald,
     labgrown: Labgrowndata,
     solitaire: solitaire,
     halo: halo,
@@ -39,7 +39,6 @@ const Productpage = () => {
     }
     return null;
   };
-
   const product = getProduct(pagename, id);
   if (!product) {
     return <div>Product not found</div>;
